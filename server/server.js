@@ -3,6 +3,7 @@ let express = require('express');
 let path = require('path');
 let cookieParser = require('cookie-parser');
 let bodyParser = require('body-parser');
+let servConf = require('./config').server;
 let app = express();
 
 //Connect routes
@@ -20,4 +21,9 @@ app.use(express.static(path.join(__dirname, '../client')));
 app.use('/', main);
 
 //Run server
-app.listen(8800, () => console.log('Server run localhost:8800'));
+app.listen(servConf.port, (err) => {
+    if (err) {
+        console.error(err);
+    }
+    console.log(`Server run ${servConf.host}:${servConf.port}`);
+});

@@ -7,9 +7,11 @@
     "body-parser": "^1.15.2",
     "cookie-parser": "^1.4.3",
     "express": "^4.14.0",
+    "mongoose": "^4.6.8",
     "path": "^0.12.7"
   },
   "devDependencies": {
+    "typings": "^2.0.0",
     "nodemon": "^1.11.0"
   },
   "scripts": {
