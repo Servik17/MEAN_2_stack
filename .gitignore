@@ -1,0 +1,4 @@
+client/node_modules
+client/app
+server/node_modules
+server/typings
